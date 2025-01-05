@@ -1,1 +1,3 @@
-export * from "./pretify/KeyOf";
+import KeyOf from "./pretify/KeyOf";
+
+export { KeyOf };

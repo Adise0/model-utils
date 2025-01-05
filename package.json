@@ -1,12 +1,17 @@
 {
-  "name": "model-sql",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "model-utils",
+  "version": "1.0.3",
+  "description": "A Typescript type uitlities package",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "scripts": {
     "startDev": "nodemon -q ./src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "packB": "npm run build && npm pack"
   },
+  "files": [
+    "build/**/*"
+  ],
   "keywords": [
     "mysql",
     "sql",

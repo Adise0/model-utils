@@ -1,0 +1,12 @@
+src/
+tsconfig.json
+
+
+.editorconfig
+.prettierrc
+nodemon.json
+sonar-key
+sonar-project.properties
+
+*.ts
+!*.d.ts

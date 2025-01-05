@@ -7,3 +7,5 @@ sonar-key
 build
 
 output
+
+*.tgz
