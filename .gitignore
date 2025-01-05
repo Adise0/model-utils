@@ -1,0 +1,9 @@
+.env
+node_modules
+
+coverage
+.scannerwork
+sonar-key
+build
+
+output
