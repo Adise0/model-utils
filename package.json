@@ -6,6 +6,8 @@
   "types": "build/index.d.ts",
   "scripts": {
     "startDev": "nodemon -q ./src/index.ts",
+    "testWatchCov": "jest --watchAll --coverage",
+    "testWatch": "jest --watchAll",
     "build": "tsc",
     "packB": "npm run build && npm pack"
   },
@@ -22,6 +24,7 @@
   "author": "Adise0",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^29.5.14",
     "@types/node": "^22.10.5",
     "@typescript-eslint/eslint-plugin": "^8.19.0",
     "@typescript-eslint/parser": "^8.19.0",
@@ -29,7 +32,9 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.31.0",
+    "jest": "^29.7.0",
     "nodemon": "^3.1.9",
+    "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2"
   }
 }

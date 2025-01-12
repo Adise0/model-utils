@@ -5,6 +5,9 @@ tsconfig.json
 .editorconfig
 .prettierrc
 nodemon.json
+
+coverage
+.scannerwork
 sonar-key
 sonar-project.properties
 
