@@ -1,3 +1,4 @@
+import isObject from "../../checkers/isObject/isObject";
 import NestedKeyOf from "../NestedKeyOf";
 
 const getNestedKeys = <Schema extends object>(
@@ -7,12 +8,12 @@ const getNestedKeys = <Schema extends object>(
 
   const checkObject = (nestedObj: object, path: string[] = []) => {
     Object.entries(nestedObj).forEach(([key, value]) => {
-      if (typeof value === "object") {
+      if (isObject(value)) {
         checkObject(value, [...path, key]);
         return;
       }
 
-      nestedKeys.push(`${path.join(".")}.${key}`);
+      nestedKeys.push(`${path.join(".")}${path.length !== 0 ? "." : ""}${key}`);
     });
   };
   checkObject(object);
