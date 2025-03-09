@@ -6,7 +6,7 @@ import IsObject from "./pretify/IsObject";
 
 import NestedKeyOf from "./nested/NestedKeyOf";
 import NestedPartial from "./nested/NestedPartial";
-import NestedRequired from "./nested/NestedRequired";
+import NestedRequired, { WithRequired } from "./nested/NestedRequired";
 import NestedValue from "./nested/NestedValue";
 
 import DateToString from "./converters/DateToString";
@@ -27,6 +27,10 @@ import wait from "./util/wait";
 import isEmpty from "./array/isEmpty";
 import isObject from "./checkers/isObject/isObject";
 import isFunction from "./checkers/isFunction/isFunction";
+import AsEnum from "./util/AsEnum";
+import IsEnum from "./util/IsEnum";
+import WithoutEnumBrand from "./util/WithoutEnumBrand";
+import AsBrandless from "./nested/AsBrandless";
 
 export {
   KeyOf,
@@ -43,6 +47,10 @@ export {
   OmitUnion,
   AtLeastOne,
   AsSingle,
+  AsEnum,
+  IsEnum,
+  WithoutEnumBrand,
+  AsBrandless,
 };
 
 export {
