@@ -31,6 +31,8 @@ import AsEnum from "./util/AsEnum";
 import IsEnum from "./util/IsEnum";
 import WithoutEnumBrand from "./util/WithoutEnumBrand";
 import AsBrandless from "./nested/AsBrandless";
+import IsUnion from "./util/IsUnion";
+import IsPrimitiveOrConstructor from "./util/IsPrimitiveOrConstructor";
 
 export {
   KeyOf,
@@ -51,6 +53,8 @@ export {
   IsEnum,
   WithoutEnumBrand,
   AsBrandless,
+  IsUnion,
+  IsPrimitiveOrConstructor,
 };
 
 export {
